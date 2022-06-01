@@ -1,6 +1,5 @@
-package br.com.fiap.teste.bean;
+package br.com.fiap.gestao.bean;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -13,9 +12,9 @@ import javax.inject.Named;
 
 import org.primefaces.model.file.UploadedFile;
 
-import br.com.fiap.teste.dao.VisitanteDao;
-import br.com.fiap.teste.model.Visitante;
-import br.com.fiap.teste.service.UploadService;
+import br.com.fiap.gestao.dao.VisitanteDao;
+import br.com.fiap.gestao.model.Visitante;
+import br.com.fiap.gestao.service.UploadService;
 
 @Named
 @RequestScoped

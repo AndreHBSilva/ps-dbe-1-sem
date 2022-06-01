@@ -14,71 +14,59 @@
 
 				<div class="ui-fluid">
 					<div class="p-field">
-						<label for="name">Nome</label>
-						<p:inputText 
-							id="name" 
-							type="text" 
-							required="true"
-							value="#{visitanteBean.visitante.name}"
-							requiredMessage="O campo nome é obrigatório">
-							<f:ajax event="blur" render="msg" />
-						</p:inputText>
-					</div> 
-					<div class="p-field">
-						<label for="dataNasc">Data de nascimento</label>
-						<p:datePicker
-						id="dataNasc"
-						value="#{visitanteBean.visitante.dateNasc}"
-						validatorMessage="Inserir uma data válida"
-						yearNavigator="true"
-						required="true"
-						>
-						<f:ajax event="blur" render="msg"/>
-						</p:datePicker>
-						
-					</div>
-					<div class="p-field">
-						<label for="price">CPF</label>
-						<p:inputMask 
-						id="CPF"
-						value="#{visitanteBean.visitante.cpf}" 
-						mask="999.999.999-99" 
-						required="true">
-						<f:ajax event="blur" render="msg"/>
-						</p:inputMask>
-						
-					</div>
-					<div class="p-field">
-						<label for="price">RG</label>
-						<p:inputMask 
-						id="RG"
-						value="#{visitanteBean.visitante.rg}" 
-						required="true">
-						<f:ajax event="blur" render="msg"/>
-						</p:inputMask>
-					</div>
-					
-					<div class="p-field">
-						<label for="price">Digito RG</label>
-						<p:inputMask 
-						id="DIG_RG"
-						value="#{visitanteBean.visitante.digRg}" 
-						mask="9"
-						required="true">
-						<f:ajax event="blur" render="msg"/>
-						</p:inputMask>
-						 
-					</div>
-					 
-					<div class="p-field">
 						<label for="image">Image File: </label>
 						<p:fileUpload value="#{visitanteBean.image}" mode="simple"
 							skinSimple="true" id="image" />
 					</div>
-					
+					<div class="p-field">
+						<label for="name">Nome</label>
+						<p:inputText id="name" type="text" required="true"
+							value="#{visitanteBean.visitante.name}"
+							requiredMessage="O campo nome é obrigatório">
+							<f:ajax event="blur" render="msg" />
+						</p:inputText>
+					</div>
+					<div class="p-field">
+						<label for="dataNasc">Data de nascimento</label>
+						<p:datePicker id="dataNasc"
+							value="#{visitanteBean.visitante.dateNasc}"
+							validatorMessage="Inserir uma data válida" yearNavigator="true"
+							required="true">
+							<f:ajax event="blur" render="msg" />
+						</p:datePicker>
+
+					</div>
+					<div class="p-field">
+						<label for="price">CPF</label>
+						<p:inputMask id="CPF" value="#{visitanteBean.visitante.cpf}"
+							mask="999.999.999-99" required="true">
+							<f:ajax event="blur" render="msg" />
+						</p:inputMask>
+
+					</div>
+					<div class="p-field">
+						<label for="price">RG</label>
+						<p:inputMask id="RG" value="#{visitanteBean.visitante.rg}"
+							required="true">
+							<f:ajax event="blur" render="msg" />
+						</p:inputMask>
+					</div>
+
+					<div class="p-field">
+						<label for="price">Digito RG</label>
+						<p:inputMask id="DIG_RG" value="#{visitanteBean.visitante.digRg}"
+							mask="9" required="true">
+							<f:ajax event="blur" render="msg" />
+						</p:inputMask>
+
+					</div>
+
+
+
 				</div>
 				<f:facet name="footer">
-					<p:commandButton icon="pi pi-check" value="Save" action="#{visitanteBean.save()}"/>
+					<p:commandButton icon="pi pi-check" value="Save"
+						action="#{visitanteBean.save()}" />
 					<p:commandButton icon="pi pi-times" value="Cancel"
 						styleClass="ui-button-secondary" style="margin-left: .5em" />
 				</f:facet>

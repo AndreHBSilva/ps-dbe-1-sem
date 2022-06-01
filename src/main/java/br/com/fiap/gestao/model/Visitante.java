@@ -1,8 +1,13 @@
-package br.com.fiap.teste.model;
+package br.com.fiap.gestao.model;
 
 import java.time.LocalDate;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
 
 @Entity
 public class Visitante {

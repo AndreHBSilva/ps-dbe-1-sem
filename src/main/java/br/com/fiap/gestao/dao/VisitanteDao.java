@@ -1,4 +1,4 @@
-package br.com.fiap.teste.dao;
+package br.com.fiap.gestao.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
-import br.com.fiap.teste.model.Visitante;
+import br.com.fiap.gestao.model.Visitante;
 
 public class VisitanteDao {
 	
